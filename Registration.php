@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <style>
 
-        /*<link rel="stylesheet" href = "Style.css">*/
-h1{
-    color: #0c5518;
-}
-    </style>
+
+        <link rel="stylesheet", type ="text/css", media = "all",  href = "Style.css">
+
+
 </head>
 <body>
 
@@ -29,8 +27,9 @@ h1{
 
         $user_name = $_POST['user_name'];
         $password = $_POST['password'];
-         echo "<h1> submitted </h1>";
-
+         echo "<h1 class = key> submitted </h1>";
+        $json_string = json_encode($_POST);
+        echo $json_string;
     }
 
 ?>
