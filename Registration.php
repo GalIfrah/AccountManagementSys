@@ -29,8 +29,15 @@
         $password = $_POST['password'];
          echo "<h1 class = key> submitted </h1>";
         $json_string = json_encode($_POST);
+        if($_POST['user_name']!= null){
+            $_POST['user_name'] = "gal";
+            echo $_POST['user_name'];
+        }
         echo $json_string;
+
     }
+
+
 
 ?>
 
